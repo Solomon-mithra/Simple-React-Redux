@@ -6,6 +6,7 @@ import Signup from "./Signup";
 import Login from "./Login";
 import Dashboard from "./Dashboard";
 import Explore from "./Explore";
+import HighOrderComp from "./HighOrderComp";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/HighOrderComp" element={<HighOrderComp />} />
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="profile/:username" element={<Profile />} />
           <Route path="explore/:feed" element={<Explore />} />

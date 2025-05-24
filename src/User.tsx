@@ -1,5 +1,5 @@
 
-function User(props: { username: string; email: string; age: number }) {
+function User(props: any) {
   return (
     <div>
       <h3>User Details</h3>

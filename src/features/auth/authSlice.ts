@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const loginUser = createAsyncThunk(
   'auth/loginUser',
-  async ({ username, password }: { username: string; password: string }, thunkAPI) => {
+  async ({ username, password }: { username: string; password: string }) => {
     const response = await fetch('https://dummyjson.com/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
