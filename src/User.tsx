@@ -1,5 +1,13 @@
+import { useEffect } from "react";
 
 function User(props: any) {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      props.setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [props]);
+
   return (
     <div>
       <h3>User Details</h3>
